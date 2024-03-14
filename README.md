@@ -19,3 +19,11 @@ $Users = Get-MsolUser -All | Where-Object { $_.UserType -ne "Guest" }
 <br>
 
 $Users = Get-MsolUser -All | Where-Object { $_.UserType -eq "mya@example.com" }
+
+
+### To export the sepcific multiple  users, we can combine all the user in csv like this. 
+
+<br>
+
+$Users = Import-CSV C:\path\file.csv
+
